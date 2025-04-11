@@ -1,162 +1,46 @@
 # 🚗 Car Finder Web App
 
-A sleek, responsive, and fully functional **Car Finder Web Application** built using **React.js + Vite**. This app allows users to filter cars based on brand, fuel type, seating capacity, and price — along with wishlist support and dark mode functionality!
+A stylish and responsive web application that allows users to search, filter, and explore various cars based on features like brand, fuel type, seating capacity, and price. It also supports dark mode, wishlist functionality, and animated transitions for a modern user experience.
 
 ---
 
-## 🔥 Features
+## ✨ Features
 
-✨ **Brand & Feature Filtering**  
-✨ **Search Bar with Live Filtering**  
-✨ **Wishlist Management (LocalStorage)**  
-✨ **Dark & Light Mode Toggle**  
-✨ **Responsive UI**  
-✨ **Car Details Viewer**  
-✨ **Stylish Animations with Framer Motion**  
-✨ **Built with Tailwind CSS**  
-✨ **Deployed via GitHub Pages**
-
----
-
-## 🖼️ Preview
-
-![Car Finder Preview](https://your-preview-image-url.com) <!-- Add actual screenshot here -->
+- 🔍 **Search cars** by name or brand
+- 🏷️ **Filter** by fuel type, seating capacity, and price range
+- 🌙 **Dark / Light mode** toggle
+- 💖 **Add to Wishlist** (saved in LocalStorage)
+- 📄 **View detailed car information**
+- 📱 Fully responsive on all screen sizes
+- 🎞️ Smooth **page transitions** using Framer Motion
 
 ---
 
 ## 🛠️ Tech Stack
 
-| Tech           | Usage                          |
-|----------------|--------------------------------|
-| ⚛️ React       | Frontend framework             |
-| 🚀 Vite        | Lightning-fast dev build tool  |
-| 💅 TailwindCSS | Utility-first styling          |
-| 💾 JSON        | Simulated backend data         |
-| 🎨 React Icons | Beautiful icon support         |
-| 💡 Framer Motion | Smooth animations           |
-| 🌙 Dark Mode   | Toggle with persistent state   |
+- **React.js** – frontend library
+- **Vite** – fast dev environment and build tool
+- **Tailwind CSS** – modern utility-first styling
+- **React Router** – page routing
+- **Framer Motion** – animations and transitions
+- **React Select** – custom dropdowns
+- **LocalStorage** – wishlist persistence
+- **Mock JSON API** – data simulation
 
 ---
 
-## 📂 Folder Structure
+## 🔗 Live Demo
 
-vite-project/ ├── public/ │ └── cars.json # Car data ├── src/ │ ├── components/ # Reusable components │ ├── services/ # API handler │ ├── App.jsx # Main component │ └── main.jsx # App root ├── index.html ├── tailwind.config.js └── vite.config.js
-
-yaml
-Copy
-Edit
+👉 [Click here to view the live project](https://abhay-singh-00.github.io/car-finder)
 
 ---
 
-## ⚙️ How to Run Locally
+## 👨‍💻 Developed By
 
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/Abhay-Singh-00/car-finder.git
-   cd car-finder
-Install dependencies
-
-bash
-Copy
-Edit
-npm install
-Run development server
-
-bash
-Copy
-Edit
-npm run dev
-Build for production
-
-bash
-Copy
-Edit
-npm run build
-🚀 Deployment on GitHub Pages (Vite + gh-pages)
-Step-by-step setup:
-Install gh-pages
-
-bash
-Copy
-Edit
-npm install --save-dev gh-pages
-Update vite.config.js:
-
-js
-Copy
-Edit
-export default defineConfig({
-  base: "/car-finder/",
-  plugins: [react()],
-});
-Update package.json:
-
-json
-Copy
-Edit
-{
-  "homepage": "https://Abhay-Singh-00.github.io/car-finder",
-  "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
-  }
-}
-Deploy:
-
-bash
-Copy
-Edit
-npm run deploy
-🧠 Learnings
-How to build single-page applications using React + Vite
-
-Creating reusable and animated components
-
-Styling with Tailwind in a clean and scalable way
-
-Dark mode implementation with CSS variables and React
-
-LocalStorage and filtering logic
-
-JSON-based simulated API usage
-
-💖 Acknowledgements
-React.js
-
-Tailwind CSS
-
-Vite
-
-React Select
-
-Framer Motion
-
-React Icons
-
-🙋‍♂️ Author
-Abhay Singh
-📧 2k22.cscys32245@gmail.com
-🌐 GitHub Profile
-
-⭐ Give a Star
-If you liked this project, consider giving it a ⭐ on GitHub!
-It helps others discover the repo and motivates me to improve further 😊
-
-yaml
-Copy
-Edit
+**Abhay Singh**  
+📧 Email: [2k22.cscys32245@gmail.com](mailto:2k22.cscys32245@gmail.com)  
+🌐 GitHub: [github.com/Abhay-Singh-00](https://github.com/Abhay-Singh-00)
 
 ---
 
-### ✅ What to do now:
-- Paste the above in your `README.md` file.
-- Replace the `![Car Finder Preview]` image link with a real screenshot URL (hosted somewhere like Imgur or GitHub).
-- You're ready to go live 🚀
-
-Let me know if you also want a badge section (version, license, etc.) or CI/CD automation next!
-
-
-
-
-
-
+⭐ If you liked this project, feel free to star the repository on GitHub!
