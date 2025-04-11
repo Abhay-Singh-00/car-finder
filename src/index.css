@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+:root {
+  --bg-color: #ffffff;
+  --text-color: #000000;
+  --card-color: #f0f0f0;
+  --input-bg: #ffffff;
+  --card-border: #cccccc;
+  --hover-bg: #e5e7eb;
+}
+
+[data-theme='dark'] {
+  --bg-color: #111827;
+  --text-color: #ffffff;
+  --card-color: #1f2937;
+  --input-bg: #374151;
+  --card-border: #4b5563;
+  --hover-bg: #4b5563;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: all 0.3s ease;
+}
