@@ -1,5 +1,5 @@
 import React from 'react';
-import { Search } from 'lucide-react'; // Optional icon library (install with `npm install lucide-react`)
+import { Search } from 'lucide-react'; 
 
 function SearchBar({ setFilters }) {
   const handleSearch = (e) => {

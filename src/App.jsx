@@ -34,11 +34,17 @@ function App() {
     setLoading(true);
     fetchCars()
       .then(data => {
-        setCars(data);
-        setFilteredCars(data);
+        if (Array.isArray(data)) {
+          setCars(data);
+          setFilteredCars(data);
+        } else {
+          console.error("Data format issue:", data);
+          setError('Invalid car data format.');
+        }
         setLoading(false);
       })
-      .catch(() => {
+      .catch((err) => {
+        console.error("Fetch failed:", err);
         setError('Failed to load car data.');
         setLoading(false);
       });
@@ -73,8 +79,13 @@ function App() {
 
   const indexOfLastCar = currentPage * carsPerPage;
   const indexOfFirstCar = indexOfLastCar - carsPerPage;
-  const currentCars = filteredCars.slice(indexOfFirstCar, indexOfLastCar);
-  const totalPages = Math.ceil(filteredCars.length / carsPerPage);
+  const currentCars = Array.isArray(filteredCars)
+    ? filteredCars.slice(indexOfFirstCar, indexOfLastCar)
+    : [];
+
+  const totalPages = Array.isArray(filteredCars)
+    ? Math.ceil(filteredCars.length / carsPerPage)
+    : 0;
 
   const addToWishlist = (car) => {
     const updated = [...wishlist, car];
@@ -89,7 +100,7 @@ function App() {
   };
 
   return (
-    <Router>
+    <Router basename="/car-finder">
       <div className="p-4 dark:bg-gray-900 dark:text-white min-h-screen">
         <nav className="flex flex-col lg:flex-row lg:justify-between items-center gap-4 py-4 px-6 mb-6 shadow-md bg-white dark:bg-gray-800 text-black dark:text-white rounded-xl">
           <div className="text-2xl font-bold text-blue-600 dark:text-blue-400">

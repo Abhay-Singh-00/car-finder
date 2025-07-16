@@ -86,7 +86,7 @@ function FilterPanel({ filters, setFilters, setSort }) {
         border: '1px solid var(--card-border)',
       }}
     >
-      {/* Brand */}
+      
       <div>
         <label className="flex items-center gap-2 font-semibold mb-1" style={{ color: 'var(--text-color)' }}>
           <FaCar /> Brand
@@ -101,7 +101,7 @@ function FilterPanel({ filters, setFilters, setSort }) {
         />
       </div>
 
-      {/* Fuel Type */}
+      
       <div>
         <label className="flex items-center gap-2 font-semibold mb-1" style={{ color: 'var(--text-color)' }}>
           <FaGasPump /> Fuel Type
@@ -116,7 +116,7 @@ function FilterPanel({ filters, setFilters, setSort }) {
         />
       </div>
 
-      {/* Seating Capacity */}
+      
       <div>
         <label className="flex items-center gap-2 font-semibold mb-1" style={{ color: 'var(--text-color)' }}>
           <FaUsers /> Seating Capacity
@@ -139,7 +139,7 @@ function FilterPanel({ filters, setFilters, setSort }) {
         </select>
       </div>
 
-      {/* Price Range */}
+      
       <div>
         <label className="flex items-center gap-2 font-semibold mb-1" style={{ color: 'var(--text-color)' }}>
           <FaRupeeSign /> Price Range
@@ -159,7 +159,7 @@ function FilterPanel({ filters, setFilters, setSort }) {
         </p>
       </div>
 
-      {/* Sort By Price */}
+      
       <div>
         <label className="flex items-center gap-2 font-semibold mb-1" style={{ color: 'var(--text-color)' }}>
           <FaSortAmountDown /> Sort by Price
